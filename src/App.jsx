@@ -1,13 +1,17 @@
-import { useState } from 'react'
+
 
 import './App.css'
-
+import Navbar from './components/homepage/navbar/Navbar'
+import Banner from './components/homepage/banner/banner'
+import Start from './components/homepage/Start/Start'
 function App() {
 
 
   return (
-    <>
-      <h1 className='font-bold text-red-500'>Assignment 6</h1>
+    <><div className=' '><Navbar></Navbar>
+      <Banner></Banner>
+      <Start></Start></div>
+      
     </>
   )
 }
