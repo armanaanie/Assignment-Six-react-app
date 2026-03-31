@@ -20,7 +20,7 @@ Digital Workflow</h1>
 <br />
 software—all in one place. Start creating faster today.
 
-<br />
+
 Explore Products
 
       </p>

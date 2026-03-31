@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Builder",
+    "description": "Create simple resumes quickly with template.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": "10+ templates, Basic editing tools, Export to PDF",
+    "icon": "📝"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Builder",
+    "description": "Advanced resume builder with ATS opt.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": "100+ templates, ATS optimization, Export to PDF & DOCX",
+    "icon": "🚀"
+  },
+  {
+    "id": 3,
+    "name": "Career Toolkit",
+    "description": "All-in-one package for job seekers.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": "Resume builder, Cover letter generator, Interview tips",
+    "icon": "💼"
+  },
+  {
+    "id": 4,
+    "name": "Portfolio Builder",
+    "description": "Build stunning personal portfolios easily.",
+    "price": 14.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": "Custom domains, Drag & drop builder, Responsive design",
+    "icon": "🎨"
+  },
+  {
+    "id": 5,
+    "name": "AI Resume Assistant",
+    "description": "AI-powered resume suggestions & improvement.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": "AI content suggestions, Grammar correction, Keyword optimization",
+    "icon": "🤖"
+  },
+  {
+    "id": 6,
+    "name": "Job Tracker Pro",
+    "description": "Track job applications & interviews one place.",
+    "price": 7.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": "Application tracking, Interview reminders, Company notes",
+    "icon": "📊"
+  }
+]
