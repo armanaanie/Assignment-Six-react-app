@@ -20,7 +20,7 @@ const Navbar = ({inCart}) => {
     </ul>
   </div>
   <div className="navbar-end gap-2">
-    <div className='indicator'><span className="indicator-item text-white rounded-full bg-violet-500 font-mono">{inCart.length}</span>
+    <div className='indicator'><span className={`${inCart.length<=0?"hidden":"indicator-item text-white rounded-full bg-violet-500 font-mono"}`}>{inCart.length}</span>
         <button> <MdOutlineShoppingCart /> </button></div>
     
 <a>Login</a>

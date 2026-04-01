@@ -19,7 +19,7 @@ setInCart([...inCart,pricing])
             <p><span className='font-bold text-[30px]'>${price}</span>/Mo</p>                             {features.split(",").map((feature, index) => (
   <FeatureCard key={index} feature={feature.trim()} />
 ))}
- <button className='btn  bg-linear-to-r from-violet-950 to-violet-600 text-white rounded-3xl ' onClick={handleChooseProduct}>{isInCart == true? "In Cart":"Buy Now"}</button>     
+ <button className='btn  bg-linear-to-r from-violet-950 to-violet-600 text-white rounded-3xl ' onClick={handleChooseProduct}>{isInCart == true? "Added to Cart":"Buy Now"}</button>     
 
                       
         </div>
