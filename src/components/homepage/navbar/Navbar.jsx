@@ -1,6 +1,6 @@
 import React from 'react';
 import { MdOutlineShoppingCart } from "react-icons/md";
-const Navbar = () => {
+const Navbar = ({inCart}) => {
     return (
         <div>
             <div className="navbar bg-white border-b-gray-300 px-15">
@@ -20,7 +20,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end gap-2">
-    <div className='indicator'><span className="indicator-item text-white rounded-full bg-violet-500 font-mono">12</span>
+    <div className='indicator'><span className="indicator-item text-white rounded-full bg-violet-500 font-mono">{inCart.length}</span>
         <button> <MdOutlineShoppingCart /> </button></div>
     
 <a>Login</a>

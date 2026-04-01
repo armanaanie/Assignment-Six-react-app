@@ -2,9 +2,10 @@
 import AvailableProduct from './AvailableProduct/AvailableProduct';
 import { Suspense } from 'react';
 import { useState } from 'react';
-
-const Product = ({ pricingPromise }) => {
-    const[selected,setSelected]=useState("Available")
+import CartProducts from './cartProducts/cartProducts';
+const Product = ({ pricingData,inCart,setInCart }) => {
+    const[selected,setSelected]=useState("Available");
+    // const[inCart,setInCart]=useState([])
 console.log(selected,"selected")
     return (
         <div>
@@ -21,12 +22,14 @@ console.log(selected,"selected")
                             <button onClick={() => setSelected("Available")}
                             className={`btn ${selected==="Available"?"bg-linear-to-r from-violet-950 to-violet-600 text-white":"bg-white text-violet-500"} rounded-2xl`}>Product</button>
                             <button onClick={() => setSelected("Cart")}
-                             className={`btn ${selected==="Cart"?"bg-linear-to-r from-violet-950 to-violet-600 text-white":"bg-white text-violet-500"} rounded-2xl`}>Cart</button></div>
+                             className={`btn ${selected==="Cart"?"bg-linear-to-r from-violet-950 to-violet-600 text-white":"bg-white text-violet-500"} rounded-2xl`}>Cart ({inCart.length})</button></div>
 
                     </div>
+                    
                 </div>
             </div>
-            <Suspense fallback={<span className="loading loading-bars loading-xs"></span>}><AvailableProduct pricingPromise={pricingPromise}></AvailableProduct></Suspense>
+            <div>{selected==="Available"?<AvailableProduct pricingData={pricingData} setInCart={setInCart} inCart={inCart}></AvailableProduct>:<CartProducts inCart={inCart} setInCart={setInCart} ></CartProducts>}</div>
+            
         </div>
     );
 };
