@@ -5,7 +5,7 @@ const PriceSection = () => {
         <div className='flex flex-col gap-15 items-center my-20'>
             <div className='flex flex-col gap- items-center'>
                 <h1 className='font-bold text-[30px]'>Simple, Transparent Pricing</h1><p className='font-extralight text-[12px]'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p></div>
-            <div className='flex gap-5  '>
+            <div className='grid grid-col-1 md:grid-cols-3 gap-5  '>
                 <div className='flex flex-col bg-violet-50 rounded-md gap-2 p-4 h-75'>
                     <h3 className='font-bold text-[20px]'>Basic Plan</h3><p>Perfect for beginners who want to get started.</p>
                     <p><span className='font-bold text-[18px]'>$10</span>/Mo</p>

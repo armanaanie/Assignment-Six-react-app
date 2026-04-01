@@ -1,9 +1,9 @@
 import React from 'react';
-
+import SubFooter from './SubFooter/SubFooter';
 const Footer = () => {
-    return (
+    return (<div>
         <footer className="footer sm:footer-horizontal bg-blue-900 text-white p-10">
-            <nav><h1 className='font-bold text-[20px]'>DigiTools</h1><p>Premium digital tools for creators,<br/> professionals, and businesses. <br/>Work smarter with our suite of powerful tools.</p>
+            <nav><h1 className='font-bold text-[20px]'>Digitool</h1><p>Premium digital tools for creators,<br/> professionals, and businesses. <br/>Work smarter with our suite of powerful tools.</p>
             </nav>
   <nav>
     <h6 className="footer-title">Services</h6>
@@ -64,7 +64,12 @@ const Footer = () => {
       </a>
     </div>
   </nav>
+  
 </footer>
+
+<SubFooter></SubFooter></div>
+
+
     );
 };
 
