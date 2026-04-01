@@ -8,7 +8,9 @@ import Product from './components/homepage/product/Product'
 import { ToastContainer} from 'react-toastify';
 import { use } from 'react'
 import { useState } from 'react'
-const pricingPromise= fetch('/public/product.json').then(res => res.json());
+import StepSection from './components/homepage/StepSection/StepSection'
+import PriceSection from './components/homepage/PricingSection/PriceSection'
+const pricingPromise= fetch('/product.json').then(res => res.json());
 
 function App() {
  const pricingData = use(pricingPromise);
@@ -18,7 +20,9 @@ const[inCart,setInCart]= useState([])
     <><div className=' '><Navbar inCart={inCart} ></Navbar>
       <Banner></Banner>
       <Start></Start>
-      <Product pricingData={pricingData} inCart={inCart} setInCart={setInCart}></Product></div>
+      <Product pricingData={pricingData} inCart={inCart} setInCart={setInCart}></Product>
+      <StepSection></StepSection>
+      <PriceSection></PriceSection></div>
       <ToastContainer />
     </>
   )

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Plan",
+    "description": "Perfect for beginners who want to get started.",
+    "price": 10,
+    "features": [
+      "Access to basic tutorials",
+      "5 Projects",
+      "Community support"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "",
+    "description": "",
+    "price": 20,
+    "features": [
+      "Access to all tutorials",
+      "20 Projects",
+      "Email support",
+      ""
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Premium Plan",
+    "description": "",
+    "price": 50,
+    "features": [
+      "Unlimited tutorials",
+      "Unlimited projects",
+      "Priority support",
+      "1-on-1 mentoring"
+    ]
+  }
+ 
+]
