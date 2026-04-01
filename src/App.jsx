@@ -18,13 +18,13 @@ function App() {
 const[inCart,setInCart]= useState([])
 
   return (
-    <><div className=' '><Navbar inCart={inCart} ></Navbar>
-      <Banner></Banner>
+    <><div ><Navbar inCart={inCart} ></Navbar>
+      <main className='my-1 mx-auto'><Banner></Banner>
       <Start></Start>
       <Product pricingData={pricingData} inCart={inCart} setInCart={setInCart}></Product>
       <StepSection></StepSection>
       <PriceSection></PriceSection>
-      <Footer></Footer></div>
+      <Footer></Footer></main></div>
       <ToastContainer />
     </>
   )
