@@ -10,6 +10,7 @@ import { use } from 'react'
 import { useState } from 'react'
 import StepSection from './components/homepage/StepSection/StepSection'
 import PriceSection from './components/homepage/PricingSection/PriceSection'
+import Footer from './components/homepage/Footer/Footer'
 const pricingPromise= fetch('/product.json').then(res => res.json());
 
 function App() {
@@ -22,7 +23,8 @@ const[inCart,setInCart]= useState([])
       <Start></Start>
       <Product pricingData={pricingData} inCart={inCart} setInCart={setInCart}></Product>
       <StepSection></StepSection>
-      <PriceSection></PriceSection></div>
+      <PriceSection></PriceSection>
+      <Footer></Footer></div>
       <ToastContainer />
     </>
   )
